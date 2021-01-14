@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import RECIPE_DATA from "./Data";
+import RecipeList  from "./recipes/RecipieList";
+import { createGlobalStyle } from "styled-components";
+
+
+const GlobalStyle = createGlobalStyle`
+*{
+  @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+  font-family: 'Bad Script', cursive;
+  margin: 0;
+  padding: 0;
+}`
 
 function App() {
   return (
+    <>
+    <GlobalStyle />
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <RecipeList data={RECIPE_DATA.recipes}/>
     </div>
+    </>
   );
 }
 
