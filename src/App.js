@@ -2,6 +2,7 @@
 import RECIPE_DATA from "./Data";
 import RecipeList  from "./recipes/RecipieList";
 import { createGlobalStyle } from "styled-components";
+import RecipieCard from "./recipes/RecipieCard";
 
 
 const GlobalStyle = createGlobalStyle`
@@ -19,6 +20,7 @@ function App() {
     <GlobalStyle />
     <div className="App">
      <RecipeList data={RECIPE_DATA.recipes}/>
+     {/*<RecipieCard data={RECIPE_DATA.recipes}/>*/}
     </div>
     </>
   );

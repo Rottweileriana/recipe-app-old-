@@ -18,7 +18,7 @@ margin: 12px;
 
 
 function RecipieItem(props) {
-    console.log(props.item)
+    // console.log(props.item)
     return(<StyledLI>
       
       <img src={props.item.image} width="100%" alt={props.item.name}/>

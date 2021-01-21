@@ -1,7 +1,7 @@
 const RECIPE_DATA = {
     "recipes": [
         {
-            "name": "Orange Marmelade",
+            "name": "Apelsinmarmelad",
             "ingredients": [ 
             {   amount: 1,   measure: "kg",  ingredient: "Oranges"    },
             {   amount: 1,   measure: "l",   ingredient: "Water"      },
@@ -9,12 +9,13 @@ const RECIPE_DATA = {
             {   amount: 2,   measure: "tsb", ingredient: "Citric acid"}],
             "toDo": ["Wash the oranges", "Cut the oranges in as thin slises as posible. Take the seeds and peel and put them in a pice of cloth, use a strig to make a small pouch.", "Put fruit and the pouch in a pot with water and let sit for 24 hours"],
             "id": 1,
+            "cardID":10,
             "image": "https://cdn.matskafferiet.se/wp-content/uploads/2014/03/apelsinmarmelad-med-citron.jpg",
             "author": "Maud Lindblå",
             "published": "Tidens förlag 1983",
         },
         {
-            "name": "Orange soup",
+            "name": "Apelsinsoppa",
             "ingredients": [
                 {   amount: 6,   measure: "dl",  ingredient: "Water"    },],
             "toDo": "Stir potatostarch in some water",
