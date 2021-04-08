@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Link} from "react-router-dom"
 
 const StyledLI = styled.li`
 display: flex;
@@ -22,6 +23,7 @@ function RecipieItem(props) {
     return(<StyledLI>
       
       <img src={props.item.image} width="100%" alt={props.item.name}/>
+      <Link to ={`/${props.item.name}`}></Link>
       <h1>{props.item.name}</h1>
       </StyledLI>)
   }

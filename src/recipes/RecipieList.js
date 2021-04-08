@@ -1,5 +1,6 @@
 import RecipieItem from "./RecipieItem"
-import styled from "styled-components";
+import styled from "styled-components"
+import {Link} from "react-router-dom"
 
 const StyledUL = styled.ul`
 display: flex;
@@ -10,9 +11,20 @@ flex-wrap: wrap;
 
 
 const RecipieList = (props) => {
-    return ( <StyledUL>{props.data.map(function(item){
-        return ( <RecipieItem key = {RecipieItem.id} item = {item} />);
-})}</StyledUL>);}
+    return (  
+        <div className="RecipieList"> 
+
+        {props.data.map((item) =>(
+            <div className="recipie-preview" key ={props.item.id}>
+            <Link to={`/recept/${props.item.id}`}> 
+            <RecipieItem key = {RecipieItem.id} item = {item} />
+    
+            </Link>
+    
+    
+    </div>))};
+    </div>);
+}
  
 export default RecipieList;
 
